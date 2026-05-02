@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ANIMALIA | Home</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      img:hover {
+        transform: scale(1.15);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">ANIMALIA</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="mammals.html">Mammals</a></li>
+          <li><a href="birds.html">Birds</a></li>
+          <li><a href="fishes.html">Fishes</a></li>
+          <li><a href="reptiles.html">Reptiles</a></li>
+          <li><a href="amphibians.html">Amphibians</a></li>
+          <li><a href="invertebrates.html">Invertebrates</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button id="theme-toggle" class="theme-btn">Switch Theme 🌓</button>
+    </header>
+
+    <main>
+      <div class="hero-box">
+        <h1>The Great Animal Encyclopedia</h1>
+        <p>
+          Explore the vast diversity of life on Earth, from the tiniest insects
+          to the giant blue whale.
+        </p>
+        <div class="big-img-placeholder">
+          <video
+            autoplay
+            loop
+            muted
+            style="width: 100%; height: auto; border-radius: 20px"
+          >
+            <source src="v/Amazing.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+      <br />
+      <br />
+      <br />
+      <h1
+        style="
+          background: #8d4502;
+          color: white;
+          padding: 20px;
+          text-align: center;
+        "
+      >
+        Animal section:
+      </h1>
+      <ol class="animal-list">
+        <li>
+          <a href="mammals.html" class="animal-item"
+            ><span>Mammals</span
+            ><img
+              src="v/lion.jpg"
+              alt="Lion"
+              style="height: auto; width: 200px"
+          /></a>
+        </li>
+        <li>
+          <a href="birds.html" class="animal-item"
+            ><span>Birds</span
+            ><img
+              src="v/eagle.jpg"
+              alt="Eagle"
+              style="height: auto; width: 200px"
+          /></a>
+        </li>
+        <li>
+          <a href="fishes.html" class="animal-item"
+            ><span>Fishes</span
+            ><img
+              src="v/shark.jpg"
+              alt="Shark"
+              style="height: auto; width: 200px"
+          /></a>
+        </li>
+        <li>
+          <a href="reptiles.html" class="animal-item"
+            ><span>Reptiles</span
+            ><img
+              src="v/lizard.jpg"
+              alt="Lizard"
+              style="height: auto; width: 200px"
+          /></a>
+        </li>
+        <li>
+          <a href="amphibians.html" class="animal-item"
+            ><span>Amphibians</span
+            ><img
+              src="v/frog.jpg"
+              alt="Frog"
+              style="height: auto; width: 200px"
+          /></a>
+        </li>
+        <li>
+          <a href="invertebrates.html" class="animal-item"
+            ><span>Invertebrates</span
+            ><img
+              src="v/oct.jpg"
+              alt="Octopus"
+              style="height: 200px; width: 200px"
+          /></a>
+        </li>
+      </ol>
+      <br />
+      <br />
+      <section id="comments-section">
+        <h2>Leave a Comment</h2>
+
+        <div class="comment-form">
+          <input type="text" id="username" placeholder="Your Name" />
+          <textarea
+            id="comment-text"
+            placeholder="Write your comment here..."
+          ></textarea>
+          <button onclick="saveComment()">Post Comment</button>
+        </div>
+
+        <div id="comments-display">
+          <h3>Recent Comments:</h3>
+          <div id="comments-list"></div>
+        </div>
+      </section>
+      <br />
+      <br />
+      <div style="text-align: center">
+        <input
+          type="button"
+          value="Explore More & Contact Us"
+          class="explore-btn"
+          onclick="window.location.href = 'contact.html'"
+        />
+      </div>
+    </main>
+    <footer>
+      <p style="text-align: end">&copy; ANIMALIA 2026</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

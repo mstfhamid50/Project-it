@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ANIMALIA | reptiles</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">ANIMALIA</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="mammals.html">Mammals</a></li>
+          <li><a href="birds.html">Birds</a></li>
+          <li><a href="fishes.html">Fishes</a></li>
+          <li><a href="reptiles.html">Reptiles</a></li>
+          <li><a href="amphibians.html">Amphibians</a></li>
+          <li><a href="invertebrates.html">Invertebrates</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button id="theme-toggle" class="theme-btn">Switch Theme 🌓</button>
+    </header>
+    <main>
+      <h1>Reptiles</h1>
+      <p>
+        Tetrapod animals in the class Reptilia, including turtles, snakes, and
+        crocodiles.
+      </p>
+
+      <img
+        src="image/rep.jpeg"
+        width="401px"
+        height="226px"
+        usemap="#reptile-map"
+        alt="Reptile Anatomy"
+      />
+
+      <map name="reptile-map">
+        <area
+          shape="circle"
+          coords="305,75,45"
+          alt="Head"
+          onclick="
+            updateInfo(
+              'Head',
+              'The brain is small,but the senses like smell (Jacobsons organ) are highly developed.',
+            )
+          "
+        />
+
+        <area
+          shape="rect"
+          coords="150,85,320,200"
+          alt="Body"
+          onclick="
+            updateInfo(
+              'Body',
+              'Covered in water-resistant scales that prevent dehydration.',
+            )
+          "
+        />
+      </map>
+      <div
+        id="info-display"
+        style="
+          margin-top: 20px;
+          padding: 15px;
+          border: 1px solid #ccc;
+          background: #f9f9f9;
+        "
+      >
+        <h3>Click on the image to see details</h3>
+        <p id="details">The description will appear here...</p>
+      </div>
+      <section style="margin-top: 30px">
+        <h2>Did you know?</h2>
+        <ul>
+          <li>Reptiles are cold-blooded (ectothermic).</li>
+          <li>Some turtles can live for more than 150 years.</li>
+          <li>Reptiles have specialized skin made of scales or scutes.</li>
+        </ul>
+        <p>
+          Learn more at
+          <a href="https://nationalgeographic.com" target="_blank"
+            >National Geographic</a
+          >.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p style="text-align: end">&copy; ANIMALIA 2026</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
