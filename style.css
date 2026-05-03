@@ -13,18 +13,17 @@
 }
 
 [data-theme="dark"] {
-  --bg-color: #121212;
-  --card-bg: #1e1e1e;
-  --text-color: #e0e0e0;
-  --header-bg: #000000;
-  --accent-color: #4caf50;
+  --bg-color: Black;
+  --card-bg: Black;
+  --text-color: white;
+  --header-bg: Black;
+  --accent-color: rgba(0, 128, 13, 0.511);
 }
 
 body {
   font-family: "Arial Black", Gadget, sans-serif;
   background-color: var(--bg-color);
   color: var(--text-color);
-  transition: all 0.3s ease;
 }
 
 header {
@@ -37,7 +36,7 @@ header {
 .logo {
   font-size: 4rem;
   letter-spacing: 10px;
-  border-bottom: 5px solid #fff;
+  border-bottom: 5px solid white;
   display: inline-block;
   margin-bottom: 20px;
 }
@@ -78,7 +77,6 @@ main {
   max-width: 1400px;
   margin: 50px auto;
   padding: 60px;
-  box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
   min-height: 1000px;
 }
 
@@ -93,12 +91,6 @@ p {
   color: #666;
   margin-bottom: 40px;
   max-width: 1000px;
-}
-
-img {
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
 }
 
 .big-img-placeholder {
@@ -129,8 +121,8 @@ img {
 .small-box {
   width: 100%;
   aspect-ratio: 16 / 9;
-  background: #eee;
-  border: 5px solid #ddd;
+  background: white;
+  border: 5px solid white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -181,24 +173,12 @@ img {
   padding: 15px 40px;
   font-size: 1.2rem;
   font-weight: bold;
-  background: linear-gradient(135deg, #1b5e20 0%, #0d4d1a 100%);
-  color: white;
-  border: 3px solid #fff;
+  background: linear-gradient green;
+  color: greenyellow;
+  border: 3px solid white;
   cursor: pointer;
-  transition: all 0.3s ease;
   text-transform: uppercase;
   letter-spacing: 1px;
-}
-
-.explore-btn:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(27, 94, 32, 0.4);
-  background: linear-gradient(135deg, #0d4d1a 0%, #1b5e20 100%);
-}
-
-.explore-btn:active {
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(27, 94, 32, 0.3);
 }
 
 .eagle-section {
@@ -221,15 +201,15 @@ img {
 .comments-section {
   margin-top: 50px;
   padding: 30px;
-  background: #f9f9f9;
-  border-top: 2px solid #eee;
-  border-left: 5px solid #1b5e20;
+  background: white;
+  border-top: 2px solid white;
+  border-left: 5px solid green;
   border-radius: 8px;
   font-family: Arial, sans-serif;
 }
 
 .comments-section h2 {
-  color: #1b5e20;
+  color: green;
   margin-bottom: 20px;
   font-size: 2rem;
 }
@@ -249,43 +229,28 @@ img {
   border-radius: 5px;
   font-family: Arial, sans-serif;
   font-size: 1rem;
-  transition: border-color 0.3s ease;
 }
 
 .comment-form input:focus,
 .comment-form textarea:focus {
-  outline: none;
-  border-color: #1b5e20;
-  box-shadow: 0 0 10px rgba(27, 94, 32, 0.2);
+  border-color: green;
 }
 
 .comment-form button,
 .submit-btn {
   padding: 12px 30px;
-  background: linear-gradient(135deg, #1b5e20 0%, #0d4d1a 100%);
-  color: white;
+  background: linear-gradient white;
+  color: greenyellow;
   border: none;
   border-radius: 5px;
   font-weight: bold;
   font-size: 1rem;
   cursor: pointer;
-  transition: all 0.3s ease;
   text-transform: uppercase;
 }
 
-.submit-btn:hover,
-.comment-form button:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 20px rgba(27, 94, 32, 0.3);
-}
-
-.submit-btn:active,
-.comment-form button:active {
-  transform: scale(0.98);
-}
-
 .comment-item {
-  background: #f9f9f9;
+  background: white;
   padding: 10px;
   margin-top: 10px;
   border-radius: 5px;
@@ -301,7 +266,7 @@ img {
 }
 
 .error-msg {
-  color: #d32f2f;
+  color: red;
   font-size: 0.8rem;
   display: block;
   margin-top: 5px;
@@ -310,5 +275,11 @@ img {
 
 input:invalid,
 select:invalid {
-  border-color: #ffcdd2;
+  border-color: pink;
+}
+.zoologists-table {
+  width: 100%;
+  border: 2px solid black;
+  border-collapse: collapse;
+  margin-top: 30px;
 }

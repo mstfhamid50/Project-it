@@ -4,15 +4,17 @@
     <meta charset="UTF-8" />
     <title>ANIMALIA | Contact & Sellers Map</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
     <style>
-      /* تقسيم الصفحة لنصفين متساويين */
       .contact-page-layout {
         display: grid;
         grid-template-columns: 1fr 1fr;
         min-height: 90vh;
       }
 
-      /* Form */
       .form-side {
         padding: 60px 10%;
         background: var(--card-bg);
@@ -53,7 +55,9 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
-      <button id="theme-toggle" class="theme-btn">Switch Theme 🌓</button>
+      <button id="theme-toggle" class="theme-btn">
+        Switch Theme <i class="fa-solid fa-moon"></i>
+      </button>
     </header>
 
     <main class="contact-page-layout">
@@ -108,15 +112,13 @@
         <audio controls>
           <source src="image/birds_singing.mp3" type="audio/mpeg" />
         </audio>
-
-        <a href="https://maps.app.goo.gl/Qqs3YKVwzLwr9zhg9" target="_blank">
-          <img
-            src="image/map.jpeg"
-            alt="Our Location"
-            style="width: 100%; border-radius: 15px"
-          />
-          <p>اضغط على الخريطة لفتح الموقع في Google Maps</p>
-        </a>
+        <iframe
+          src="xx.html"
+          width="100%"
+          height="400"
+          style="border: none; border-radius: 15px"
+        >
+        </iframe>
       </section>
     </main>
 

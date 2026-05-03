@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <title>ANIMALIA | reptiles</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
   </head>
   <body>
     <header>
@@ -20,73 +24,99 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
-      <button id="theme-toggle" class="theme-btn">Switch Theme 🌓</button>
+      <button id="theme-toggle" class="theme-btn">
+        Switch Theme <i class="fa-solid fa-moon"></i>
+      </button>
     </header>
     <main>
-      <h1>Reptiles</h1>
-      <p>
-        Tetrapod animals in the class Reptilia, including turtles, snakes, and
-        crocodiles.
-      </p>
-
-      <img
-        src="image/rep.jpeg"
-        width="401px"
-        height="226px"
-        usemap="#reptile-map"
-        alt="Reptile Anatomy"
-      />
-
-      <map name="reptile-map">
-        <area
-          shape="circle"
-          coords="305,75,45"
-          alt="Head"
-          onclick="
-            updateInfo(
-              'Head',
-              'The brain is small,but the senses like smell (Jacobsons organ) are highly developed.',
-            )
-          "
-        />
-
-        <area
-          shape="rect"
-          coords="150,85,320,200"
-          alt="Body"
-          onclick="
-            updateInfo(
-              'Body',
-              'Covered in water-resistant scales that prevent dehydration.',
-            )
-          "
-        />
-      </map>
-      <div
-        id="info-display"
-        style="
-          margin-top: 20px;
-          padding: 15px;
-          border: 1px solid #ccc;
-          background: #f9f9f9;
-        "
-      >
-        <h3>Click on the image to see details</h3>
-        <p id="details">The description will appear here...</p>
-      </div>
-      <section style="margin-top: 30px">
-        <h2>Did you know?</h2>
-        <ul>
-          <li>Reptiles are cold-blooded (ectothermic).</li>
-          <li>Some turtles can live for more than 150 years.</li>
-          <li>Reptiles have specialized skin made of scales or scutes.</li>
-        </ul>
+      <section>
+        <h1>Reptiles</h1>
         <p>
-          Learn more at
-          <a href="https://nationalgeographic.com" target="_blank"
-            >National Geographic</a
-          >.
+          Tetrapod animals in the class Reptilia, including turtles, snakes, and
+          crocodiles.
         </p>
+
+        <h3>Hover on the image to see details</h3>
+        <img
+          src="image/rep.jpeg"
+          width="401px"
+          height="226px"
+          usemap="#reptile-map"
+          alt="Reptile Anatomy"
+        />
+
+        <map name="reptile-map">
+          <area
+            shape="circle"
+            coords="305,75,45"
+            alt="Head"
+            title="Head: The brain is small,but the senses like smell (Jacobsons organ) are highly developed. "
+          />
+          <area
+            shape="rect"
+            coords="150,85,320,200"
+            alt="Body"
+            title="Body: Covered in water-resistant scales that prevent dehydration."
+          />
+        </map>
+
+        <article>
+          <h2>The Komodo Dragon</h2>
+          <img
+            src="image/dragon.jpeg"
+            alt="Komodo dragon"
+            style="width: 400; height: 300; border-radius: 15px"
+            ;
+          />
+          <p>
+            The Komodo dragon is the largest living lizard on Earth, reaching up
+            to 3 meters in length and weighing up to 70 kilograms. It lives in
+            the islands of Indonesia and is a powerful predator that relies on
+            its keen sense of smell and venomous bite to subdue its prey.
+          </p>
+        </article>
+        <br />
+
+        <div
+          style="
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 30px;
+          "
+        >
+          <div>
+            <h2>About Reptiles</h2>
+            <p>Reptiles are cold-blooded vertebrates...</p>
+          </div>
+
+          <aside>
+            <h3>Quick Facts</h3>
+            <ul>
+              <li>Over 10,000 species</li>
+              <li>Found on every continent except Antarctica</li>
+              <li>Oldest group of land vertebrates</li>
+            </ul>
+          </aside>
+        </div>
+        <side>
+          <h3>Did you know?</h3>
+          <ul>
+            <li>Reptiles are cold-blooded (ectothermic).</li>
+            <li>
+              Some turtles can live for more than 150 years!<br />
+              While the "green anaconda" can stay underwater for up to 10
+              minutes without breathing
+            </li>
+            <li>Reptiles have specialized skin made of scales or scutes.</li>
+          </ul>
+          <p>
+            Learn more at
+            <a href="https://nationalgeographic.com" target="_blank"
+              >National Geographic</a
+            >.
+          </p>
+        </side>
       </section>
     </main>
 

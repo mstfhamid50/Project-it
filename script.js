@@ -132,13 +132,3 @@ if (contactForm) {
     });
 }
 
-
-function updateInfo(title, description) {
-  const displayTitle = document.querySelector('#info-display h3');
-  const displayDetails = document.getElementById('details');
-  
-  if (displayTitle && displayDetails) {
-    displayTitle.textContent = title;
-    displayDetails.textContent = description;
-  }
-}
