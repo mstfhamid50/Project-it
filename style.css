@@ -33,7 +33,7 @@ header {
   text-align: center;
 }
 
-.logo {
+.lg-x {
   font-size: 4rem;
   letter-spacing: 10px;
   border-bottom: 5px solid white;
@@ -56,7 +56,7 @@ nav ul li a {
   text-transform: uppercase;
 }
 
-.theme-btn {
+.thm-btn {
   padding: 10px 15px;
   cursor: pointer;
   border-radius: 20px;
@@ -67,7 +67,7 @@ nav ul li a {
 }
 
 main,
-.form-side,
+.frm-sd,
 .media-box {
   background-color: var(--card-bg) !important;
   color: var(--text-color);
@@ -93,7 +93,7 @@ p {
   max-width: 1000px;
 }
 
-.big-img-placeholder {
+.big-img {
   width: 100%;
   aspect-ratio: 16 / 9;
   background: #ddd;
@@ -106,19 +106,19 @@ p {
   margin-bottom: 30px;
 }
 
-.big-img-placeholder img {
+.big-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.sub-grid {
+.sub-gr {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
 }
 
-.small-box {
+.sml-bx {
   width: 100%;
   aspect-ratio: 16 / 9;
   background: white;
@@ -129,13 +129,13 @@ p {
   font-size: 1.2rem;
 }
 
-.small-box img {
+.sml-bx img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.animal-list {
+.list-div {
   list-style: none;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -143,11 +143,11 @@ p {
   padding: 0;
 }
 
-.animal-list li {
+.list-div li {
   text-align: center;
 }
 
-.animal-item {
+.list-lnk {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -155,50 +155,50 @@ p {
   gap: 15px;
 }
 
-.animal-item span {
+.list-lnk span {
   font-size: 1.2rem;
   color: #168fb4;
   font-weight: bold;
   text-transform: uppercase;
 }
 
-.animal-item img {
+.list-lnk img {
   border-radius: 10px;
   width: 100px;
   height: 100px;
 }
 
-.explore-btn {
+.exp-btn {
   border-radius: 10px;
   padding: 15px 40px;
   font-size: 1.2rem;
   font-weight: bold;
   background: linear-gradient green;
-  color: greenyellow;
+  color: black;
   border: 3px solid white;
   cursor: pointer;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
-.eagle-section {
+.bird-div {
   display: flex;
   align-items: flex-start;
   gap: 20px;
   padding: 20px;
 }
 
-.eagle-section img {
+.bird-div img {
   max-width: 400px;
   height: auto;
 }
 
-.eagle-content {
+.bird-txt {
   flex: 1;
 }
 
 #comments-section,
-.comments-section {
+.cmt-sec {
   margin-top: 50px;
   padding: 30px;
   background: white;
@@ -208,20 +208,20 @@ p {
   font-family: Arial, sans-serif;
 }
 
-.comments-section h2 {
+.cmt-sec h2 {
   color: green;
   margin-bottom: 20px;
   font-size: 2rem;
 }
 
-.comment-form {
+.cmt-frm {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
-.comment-form input,
-.comment-form textarea {
+.cmt-frm input,
+.cmt-frm textarea {
   width: 100%;
   padding: 12px;
   margin-bottom: 10px;
@@ -231,16 +231,16 @@ p {
   font-size: 1rem;
 }
 
-.comment-form input:focus,
-.comment-form textarea:focus {
+.cmt-frm input:focus,
+.cmt-frm textarea:focus {
   border-color: green;
 }
 
-.comment-form button,
+.cmt-frm button,
 .submit-btn {
   padding: 12px 30px;
   background: linear-gradient white;
-  color: greenyellow;
+  color: black;
   border: none;
   border-radius: 5px;
   font-weight: bold;
@@ -249,7 +249,7 @@ p {
   text-transform: uppercase;
 }
 
-.comment-item {
+.cmt-itm {
   background: white;
   padding: 10px;
   margin-top: 10px;
@@ -257,15 +257,15 @@ p {
   border-left: 5px solid #2e7d32;
 }
 
-.comment-item strong {
+.cmt-itm strong {
   color: #333;
 }
 
-.comment-item p {
+.cmt-itm p {
   margin: 5px 0 0;
 }
 
-.error-msg {
+.err-msg {
   color: red;
   font-size: 0.8rem;
   display: block;
@@ -277,7 +277,8 @@ input:invalid,
 select:invalid {
   border-color: pink;
 }
-.zoologists-table {
+
+.tbl-one {
   width: 100%;
   border: 2px solid black;
   border-collapse: collapse;

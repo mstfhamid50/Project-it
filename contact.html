@@ -9,13 +9,13 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
     <style>
-      .contact-page-layout {
+      .main-div {
         display: grid;
         grid-template-columns: 1fr 1fr;
         min-height: 90vh;
       }
 
-      .form-side {
+      .frm-sd {
         padding: 60px 10%;
         background: var(--card-bg);
         display: flex;
@@ -23,14 +23,14 @@
         justify-content: center;
       }
 
-      .contact-form {
+      .frm-div {
         display: flex;
         flex-direction: column;
         gap: 15px;
       }
-      .contact-form input,
-      .contact-form textarea,
-      .contact-form select {
+      .frm-div input,
+      .frm-div textarea,
+      .frm-div select {
         width: 100%;
         padding: 12px;
         border: 1px solid white;
@@ -42,7 +42,7 @@
   </head>
   <body>
     <header>
-      <div class="logo">ANIMALIA</div>
+      <div class="lg-x">ANIMALIA</div>
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -55,32 +55,32 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
-      <button id="theme-toggle" class="theme-btn">
+      <button id="theme-toggle" class="thm-btn">
         Switch Theme <i class="fa-solid fa-moon"></i>
       </button>
     </header>
 
-    <main class="contact-page-layout">
-      <section class="form-side">
+    <main class="main-div">
+      <section class="frm-sd">
         <h2>Inquire About Shops</h2>
         <p style="margin-bottom: 25px">
           Send a message to get precise directions to authorized animal sellers
           in your area.
         </p>
 
-        <form id="contactForm" class="contact-form" novalidate>
+        <form id="contactForm" class="frm-div" novalidate>
           <div>
             <input
               type="text"
               id="uName"
               placeholder="Full Name (Min 5 chars)"
             />
-            <span class="error-msg" id="nameErr"></span>
+            <span class="err-msg" id="nameErr"></span>
           </div>
 
           <div>
             <input type="email" id="uEmail" placeholder="Email Address" />
-            <span class="error-msg" id="emailErr"></span>
+            <span class="err-msg" id="emailErr"></span>
           </div>
 
           <div>
@@ -90,7 +90,7 @@
               <option value="reptiles">Reptile Specialized Sellers</option>
               <option value="mammals">Mammal Care Centers</option>
             </select>
-            <span class="error-msg" id="topicErr"></span>
+            <span class="err-msg" id="topicErr"></span>
           </div>
 
           <textarea

@@ -1,18 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    console.log("Animalia Engine Loaded.");
-    
-    // Highlight the active menu item based on current URL
-    const links = document.querySelectorAll('nav a');
-    const currentFile = window.location.pathname.split("/").pop();
-
-    links.forEach(link => {
-        if (link.getAttribute('href') === currentFile) {
-            link.style.color = "#ffeb3b";
-            link.style.fontWeight = "bold";
-            link.style.fontSize = "1.3rem";
-        }
-    });
-
     displayComments();
 });
 
@@ -46,15 +32,16 @@ function displayComments() {
     const comments = JSON.parse(localStorage.getItem('myComments')) || [];
     commentsList.innerHTML = ''; 
 
-    comments.slice().reverse().forEach(c => {
+    for(let i= comments.length-1;i>=0;i--){
+        const c =comments[i];
         const div = document.createElement('div');
-        div.className = 'comment-item';
+        div.className = 'cmt-itm';
         div.innerHTML = `
             <strong>${c.name}</strong> <small style="color: #666;">(${c.date})</small>
             <p style="margin: 5px 0;">${c.text}</p>
         `;
         commentsList.appendChild(div);
-    });
+    };
 }
 
 
@@ -62,13 +49,12 @@ function displayComments() {
 const themeToggle = document.getElementById('theme-toggle');
 const body = document.body;
 
-// 1. عند تحميل الصفحة: تحقق هل هناك ثيم محفوظ سابقاً؟
 const savedTheme = localStorage.getItem('theme');
 if (savedTheme) {
     body.setAttribute('data-theme', savedTheme);
 }
 
-// 2. عند الضغط على الزر: بدل الثيم واحفظه
+
 themeToggle.addEventListener('click', () => {
     const currentTheme = body.getAttribute('data-theme');
     
@@ -131,4 +117,3 @@ if (contactForm) {
         }
     });
 }
-
