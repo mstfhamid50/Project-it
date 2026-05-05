@@ -9,13 +9,13 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
     <style>
-      .main-div {
+      .main {
         display: grid;
         grid-template-columns: 1fr 1fr;
         min-height: 90vh;
       }
 
-      .frm-sd {
+      .form-side {
         padding: 60px 10%;
         background: var(--card-bg);
         display: flex;
@@ -23,14 +23,14 @@
         justify-content: center;
       }
 
-      .frm-div {
+      .form {
         display: flex;
         flex-direction: column;
         gap: 15px;
       }
-      .frm-div input,
-      .frm-div textarea,
-      .frm-div select {
+      .frm input,
+      .frm textarea,
+      .frm select {
         width: 100%;
         padding: 12px;
         border: 1px solid white;
@@ -42,7 +42,7 @@
   </head>
   <body>
     <header>
-      <div class="lg-x">ANIMALIA</div>
+      <div class="lg">ANIMALIA</div>
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -60,15 +60,15 @@
       </button>
     </header>
 
-    <main class="main-div">
-      <section class="frm-sd">
+    <main class="main">
+      <section class="form-side">
         <h2>Inquire About Shops</h2>
         <p style="margin-bottom: 25px">
           Send a message to get precise directions to authorized animal sellers
           in your area.
         </p>
 
-        <form id="contactForm" class="frm-div" novalidate>
+        <form id="contactForm" class="frm" novalidate>
           <div>
             <input
               type="text"

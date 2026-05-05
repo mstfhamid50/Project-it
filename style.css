@@ -33,7 +33,7 @@ header {
   text-align: center;
 }
 
-.lg-x {
+.lg {
   font-size: 4rem;
   letter-spacing: 10px;
   border-bottom: 5px solid white;
@@ -69,7 +69,7 @@ nav ul li a {
 main,
 .frm-sd,
 .media-box {
-  background-color: var(--card-bg) !important;
+  background-color: var(--card-bg);
   color: var(--text-color);
 }
 
@@ -77,20 +77,16 @@ main {
   max-width: 1400px;
   margin: 50px auto;
   padding: 60px;
-  min-height: 1000px;
 }
 
 h1 {
   font-size: 3rem;
-  color: #333;
   margin-bottom: 20px;
 }
 
 p {
   font-size: 1.2rem;
-  color: #666;
   margin-bottom: 40px;
-  max-width: 1000px;
 }
 
 .big-img {
@@ -135,7 +131,7 @@ p {
   object-fit: cover;
 }
 
-.list-div {
+.list {
   list-style: none;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -143,7 +139,7 @@ p {
   padding: 0;
 }
 
-.list-div li {
+.list li {
   text-align: center;
 }
 
@@ -173,7 +169,6 @@ p {
   padding: 15px 40px;
   font-size: 1.2rem;
   font-weight: bold;
-  background: linear-gradient green;
   color: black;
   border: 3px solid white;
   cursor: pointer;
@@ -181,14 +176,14 @@ p {
   letter-spacing: 1px;
 }
 
-.bird-div {
+.bird {
   display: flex;
   align-items: flex-start;
   gap: 20px;
   padding: 20px;
 }
 
-.bird-div img {
+.bird img {
   max-width: 400px;
   height: auto;
 }
@@ -229,11 +224,6 @@ p {
   border-radius: 5px;
   font-family: Arial, sans-serif;
   font-size: 1rem;
-}
-
-.cmt-frm input:focus,
-.cmt-frm textarea:focus {
-  border-color: green;
 }
 
 .cmt-frm button,
